@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { createAdminClient } from "@/lib/supabase/server";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";

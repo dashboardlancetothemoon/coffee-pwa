@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import Link from "next/link";
 import { adminLogout } from "@/lib/actions/auth";
 import { Button, buttonVariants } from "@/components/ui/button";
