@@ -1,0 +1,3 @@
+# Cloudflare Pages — let Next.js handle all routing
+# (this file is a no-op for @cloudflare/next-on-pages but kept for safety)
+/admin/login  /admin/login  200
