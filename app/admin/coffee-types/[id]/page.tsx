@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { createAdminClient } from "@/lib/supabase/server";
 import { CoffeeTypeForm } from "../coffee-type-form";
 import Link from "next/link";

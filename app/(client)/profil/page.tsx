@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { createClient } from "@/lib/supabase/server";
 import { toMachine } from "@/types/database";
 import { MachineSelector } from "./machine-selector";

@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { AdminHeader } from "@/components/admin-header";
 
 export default function AdminLayout({

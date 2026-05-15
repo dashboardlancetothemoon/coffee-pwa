@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { createAdminClient } from "@/lib/supabase/server";
 import { MachineForm } from "../machine-form";
 import Link from "next/link";
