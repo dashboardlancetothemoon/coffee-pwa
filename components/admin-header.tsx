@@ -1,0 +1,38 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { adminLogout } from "@/lib/actions/auth";
+import { Button } from "@/components/ui/button";
+
+export function AdminHeader() {
+  const pathname = usePathname();
+  if (pathname === "/admin/login") return null;
+
+  return (
+    <header className="border-b bg-background px-6 py-3 flex items-center justify-between">
+      <nav className="flex items-center gap-6 text-sm font-medium">
+        <Link href="/admin" className="font-semibold">
+          ☕ Admin
+        </Link>
+        <Link
+          href="/admin/machines"
+          className="text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Machines
+        </Link>
+        <Link
+          href="/admin/coffee-types"
+          className="text-muted-foreground hover:text-foreground transition-colors"
+        >
+          Cafés
+        </Link>
+      </nav>
+      <form action={adminLogout}>
+        <Button variant="ghost" size="sm" type="submit">
+          Déconnexion
+        </Button>
+      </form>
+    </header>
+  );
+}
